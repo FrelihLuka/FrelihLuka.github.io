@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<!-- Večino komentarja je na tej strani, ker se na naslednjih straneh ponavlja -->
+<head>
+	<title>Operacijski sistem - prva</title> <!-- naslov strani -->
+	<meta charset="UTF-8"> <!-- abeceda s čšž -->
+	<meta name="keywords" content="HTML,CSS"> <!-- Ni zares nujno -->
+	<meta name="author" content="Luka Frelih"> <!-- Ni zares nujno -->
+	<link rel="stylesheet" type="text/css" href="stil.css"> <!-- povežemo z dokumentom, kjer imamo CSS kodo -->
+</head>
+
+<!-- Z nekim razlogom koda ne dela pravilno, če komentiram znotraj <style> -->
+<!-- V style: CSS znotraj html dokumenta - velja za le ta html dokument:
+body - ozadje
+.prva, .druga, ... za vsako sliko posebej
+float - da je slika lahko ob besedilu na desni (levi). Brez tega sliko da pod besedilo
+width - en način za izbiranje velikosti slike
+margin - koliko prostora je okoli slike... prvi px zgoraj, drugi desno, tretji spodaj in četrti levo
+img - tanek okvir za slike, border-radius - da robovi niso tako ostri
+ -->
+
+<style>
+
+body {
+	background-color: powderblue;
+	margin: 0;
+}
+
+img.prva {
+	float: right;
+	width: 350px;
+	margin: 30px 60px 0px 30px
+}
+
+img.druga {
+	margin-left: 550px;
+	margin-top: 20px;
+	width: 250px;
+}
+
+img {
+	border: 2px solid darkblue;
+	border-radius: 7px
+}
+
+</style>
+
+<body> 
+
+<h1 class="veliki"> OPERACIJSKI SISTEM </h1> <!-- povežemo s classom "veliki" iz CSS dokumenta -->
+
+<ul>
+  <li><a class="active" href="PrvaStran.html">Prva stran</a></li> <!-- class="active" razložen v CSS datoteki, PrvaSTran.html je ime html datoteke te strani -->
+  <li><a href="Lastnosti.html">Lastnosti</a></li> <!-- Vsako poglavje v meniju ima svoj link do strani -->
+  <li><a href="Zgodovina.html">Zgodovina</a></li>
+  <li><a href="Vrste.html">Vrste OS</a></li>
+  <li><a href="Izobraževanje.html">Izobraževanje</a></li>
+  <li><a href="Viri.html">Viri in literatura</a></li>
+</ul>
+
+<h1> Pozdravljeni na moji spletni strani </h1>
+<img class="prva" src="Slike/PrvaStran1.jpg" alt="operacijski sistemi"> <!-- določimo class iz style, PrvaStran1 je ime slike, alt - določi, kaj bo izpisalo, če ne najde slike -->
+<p> Lep pozdrav vsem, ki ste obiskali mojo spletno stran o operacijskem sistemu. Namenjena je dijakom in študentom, ki delajo projekt na to temo, pa tudi vsem ostalim, 
+ki jih zanima več o operacijskem sistemu, njegovih lastnostih, delovanju in nalogah, zgodovini, vrstah operacijskih sistemov in o tem, kako bi lahko operacijski sistem vključili v  izobraževanje.
+</p> <!-- besedilo -->
+
+<img class="druga" src="Slike/PrvaStran2.jpg" alt="računalnik">
+
+</body>
+
+</html>

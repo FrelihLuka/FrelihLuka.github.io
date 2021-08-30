@@ -1,0 +1,69 @@
+/* CSS dokument, velja za vse html dokumente(ker vse povežemo s tem CSS dokumentom)*/
+
+
+h1.veliki { /*za naslov "OPERACIJSKI SISTEM"*/
+	color: black;
+	background-color: grey;
+	padding: 0px 20px; /*doda razmak na straneh med besedilom in robovi*/
+	font-size: 500%;
+	text-align: center; /*tekst na sredini*/
+	margin-left: 0px;
+	float: right;
+	border: 3px solid darkblue; /*okvir*/
+	border-radius: 8px; /*robovi manj ostri*/
+}
+
+
+h1, h2, h3, p, pre {
+	margin-left: 310px; /*da je tekst ravno prav odmaknjen od menija*/
+	margin-right: 300px /*da tekst ne gre predaleč na desno stran zaslona*/
+}
+
+h2, h3, p, pre {
+	font-family: Helvetica
+}
+
+h1 {text-align: center /*tekst poravnan na sredino*/; color: blue; font-size: 230%; border-style: none none dotted none /*samo spodnji del roba; podčrtan s pikami*/; border-color: darkblue}
+
+h2 {font-size: 180%}
+
+h3 {font-size: 130%}
+
+p, pre {
+	font-size: 110%;
+}
+
+
+
+ul { /*urejanje menija na levi*/
+  margin-top: 0px; /*od vrha*/
+  padding: 0;
+  width: 18%; /*nastavljanje širine*/
+  background-color: #3FBDD4;
+  position: fixed; /*se ne premika navzgor, če stran pomikamo navzdol*/
+  height: 100%; /*da gre od vrha do dna*/
+}
+
+li {
+  text-align: center; /*tekst v meniju naravnan na sredino*/
+}
+
+
+li a {
+  display: block; /*meni je sestavljen iz pravokotnikov*/
+  color: black;
+  padding: 12px 22px;
+  text-decoration: none; /*da besede v meniju niso podčrtane, kar je default za linke*/
+  font-size: 140% /*da so črke večje*/
+}
+
+li a.active {
+  background-color: #005CFA; /*barva ozadja za besedo v meniju je drugačna, če smo na tej strani*/
+  color: white; /*tudi barva besede se spremeni*/
+}
+
+li a:hover:not(.active) { /*če ne velja, da smo trenutno na strani, je ozadje te besede spet drugačne barve*/
+  background-color: #2891D6;
+  color: white;
+}
+

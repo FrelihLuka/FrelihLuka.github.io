@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Operacijski sistem - lastnosti</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS">
+	<meta name="author" content="Luka Frelih">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+
+<!-- lahko izberemo tudi samo margin-left ali margin-right, da določimo, koliko prostora je samo ob eni strani slike (ali besedila) -->
+<!-- na tej strani v <style> nimam img {border: 2px solid darkblue;border-radius: 7px}, ker ne izgleda dobro s slikami brez okvirja -->
+
+<style>
+
+body {
+	background-color: powderblue;
+	margin: 0;
+}
+
+img.prva {
+	margin-right: 100px;
+	width: 280px;
+	float: right
+}
+
+img.druga {
+	margin-left: 20px;
+	width: 230px;
+	float: right
+}
+
+</style>
+
+<body> 
+
+<h1 class="veliki"> OPERACIJSKI SISTEM </h1>
+
+<ul>
+  <li><a href="PrvaStran.html">Prva stran</a></li>
+  <li><a class="active" href="Lastnosti.html">Lastnosti</a></li>
+  <li><a href="Zgodovina.html">Zgodovina</a></li>
+  <li><a href="Vrste.html">Vrste OS</a></li>
+  <li><a href="Izobraževanje.html">Izobraževanje</a></li>
+  <li><a href="Viri.html">Viri in literatura</a></li>
+</ul>
+
+<h1> Lastnosti </h1>
+<img class="prva" src="Slike/zgradba.png" alt="operacijski sistemi">
+<h2> Zgradba </h2>
+
+<p> Najprej si na hitro poglejmo zgradbo operacijskega sistema. Sestavljen je iz dveh delov:<br>
+- Jedra, ki skrbi za nadzor procesorja, pomnilnika, procesov in naprav v računalniku, <br>
+- uporabniškega vmesnika, ki skrbi za interakcijo med uporabnikom in računalnikom.<p/>
+
+<h2> Delovanje </h2>
+<img class="druga" src="Slike/Lastnosti.png" alt="operacijski sistemi">
+<p> Operacijski sistem se nahaja v vsakem današnjem računalniku in je eden najbolj ključnih delov računalnika. Je program, ki deluje kot vmesnik med uporabnikom in strojno opremo. 
+Zagotavlja okolje, v katerem se izvaja programe na uporabniku prijazen in učinkovit način. Uporabniku ni treba vedeti, kako točno se zapisuje podatke na disk, ker za take stvari poskrbi 
+operacijski sistem. Zagotavlja pogoje za delo programov, čeprav sam ne opravlja koristnih opravil. Je nadzorni program, nadzoruje CPE (za na primer časovno razporejanje opravil), pomnilniški prostor, 
+datotečni prostor, omogoča pa tudi večjo varnost. Poleg tega preprečuje napake in nepravilno uporabo računalnika, s tem da na primer nadzira uporabe virov in uporabniškim programom omogoča 
+sočasni dostop do virov. Poseben poudarek pa daje na operacije z vhodnimi oz. izhodnimi napravami. Tako na primer določi, kateri program v nekem trenutku uporablja miško ali tiskalnik. 
+Na primer, če želita dva uporabnika hkrati tiskati vsak svoj dokument, operacijski sistem poskrbi, da se natisne najprej en dokument in nato še drugi in ne, da se besedili prepletata. </p>
+
+
+</body>
+
+</html>
